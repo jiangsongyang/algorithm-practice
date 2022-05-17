@@ -38,30 +38,24 @@ s[i] 为 '0' 或 '1'
  * 00110`01`1
  */
 export function countBinarySubstrings(s: string): number {
-  const sLen = s.length
-  let pointer = 0
-  const stack = []
-  let res = 0
-  while (pointer < sLen) {
-    for (let i = pointer; i < sLen; i++) {
-      const prev: any = stack[stack.length - 1]
-      const item = s[i]
-      // 第一次
-      if (prev === undefined) {
-        stack.push(item)
-      } else {
-        if (prev === item) {
-          stack.push(item)
-        } else {
-          stack.pop()
-        }
-        if (stack.length === 0) {
-          res++
-          break
-        }
-      }
+  // pre 前一个数字连续出现的次数，cur 当前数字连续出现的次数，result 结果子串个数
+  let pre = 0
+  let cur = 1
+  let result = 0
+  for (let i = 0, len = s.length - 1; i < len; i++) {
+    // 判断当前数字是否与后一个数字相同
+    if (s[i] === s[i + 1]) {
+      // 相同，则当前数字出现的次数cur加1
+      cur++
+    } else {
+      // 不同，则当前数字事实上变成了前一个数字，当前数字的次数重置为1
+      pre = cur
+      cur = 1
     }
-    pointer++
+    if (pre >= cur) {
+      // 前一个数字出现的次数 >= 后一个数字出现的次数，则一定包含满足条件的子串
+      result++
+    }
   }
-  return res
+  return result
 }
