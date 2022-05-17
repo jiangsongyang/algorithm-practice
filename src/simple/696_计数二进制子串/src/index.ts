@@ -28,34 +28,35 @@ s[i] 为 '0' 或 '1'
 
 /* _____________ Your Code Here _____________ */
 /**
- * 00110011 -> 6
- * how to find it
- * `0011`0011
- * 0`01`10011
- * 00`1100`11
- * 001`10`011
- * 0011`0011`
- * 00110`01`1
+ * 思路
+ * 将 string 按照相同的值切割 如
+ * 0011100111
+ * 切成
+ * 00 111 00 111
+ * 组合成
+ * [ 2 , 3 , 2 , 3 ]
+ * 找相邻的进行比较
+ * 取小的
+ * 循环 俩俩比
  */
 export function countBinarySubstrings(s: string): number {
-  // pre 前一个数字连续出现的次数，cur 当前数字连续出现的次数，result 结果子串个数
-  let pre = 0
-  let cur = 1
-  let result = 0
-  for (let i = 0, len = s.length - 1; i < len; i++) {
-    // 判断当前数字是否与后一个数字相同
-    if (s[i] === s[i + 1]) {
-      // 相同，则当前数字出现的次数cur加1
-      cur++
+  const sLen = s.length
+  const arr = []
+  let pre = null
+  let res = 0
+  for (let i = 0; i < sLen; i++) {
+    const item = s[i]
+    if (pre === item) {
+      arr[arr.length - 1].push(item)
     } else {
-      // 不同，则当前数字事实上变成了前一个数字，当前数字的次数重置为1
-      pre = cur
-      cur = 1
+      arr.push([item])
     }
-    if (pre >= cur) {
-      // 前一个数字出现的次数 >= 后一个数字出现的次数，则一定包含满足条件的子串
-      result++
-    }
+    pre = item
   }
-  return result
+  for (let i = 1; i < arr.length; i++) {
+    const curr = arr[i - 1].length
+    const next = arr[i].length
+    res += Math.min(curr, next)
+  }
+  return res
 }
