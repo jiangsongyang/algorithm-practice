@@ -4,6 +4,7 @@
   "description": "algorithm-practice",
   "main": "index.js",
   "scripts": {
+    "ct": "node ./scripts/create-template/index.mjs",
     "prepare": "husky install",
     "lint:eslint": "npx eslint . --fix",
     "lint:prettier": "npx prettier . --write",
@@ -12,9 +13,9 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "pnpm lint:prettier",
       "pnpm lint:eslint",
-      "git add"
+      "pnpm lint:prettier",
+      "git add ."
     ]
   },
   "husky": {
@@ -55,6 +56,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^8.0.1",
+    "inquirer": "^8.2.4",
     "jest": "^28.1.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
