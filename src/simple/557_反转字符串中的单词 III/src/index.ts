@@ -25,19 +25,29 @@ s 中的所有单词都用一个空格隔开。
 
 /* _____________ Your Code Here _____________ */
 
+// 1
+// export function reverseWords(s: string): string {
+//   const token = ' '
+//   const stack: string[] = []
+//   let res = ''
+//   for (let i = 0; i < s.length; i++) {
+//     const item = s[i]
+//     if (item !== token) {
+//       stack.unshift(item)
+//     }
+//     if (item === token || i === s.length - 1) {
+//       res += stack.join('') + (i !== s.length - 1 ? token : '')
+//       stack.length = 0
+//     }
+//   }
+//   return res
+// }
+
+// 2
 export function reverseWords(s: string): string {
   const token = ' '
-  const stack: string[] = []
-  let res = ''
-  for (let i = 0; i < s.length; i++) {
-    const item = s[i]
-    if (item !== token) {
-      stack.unshift(item)
-    }
-    if (item === token || i === s.length - 1) {
-      res += stack.join('') + (i !== s.length - 1 ? token : '')
-      stack.length = 0
-    }
-  }
-  return res
+  return s
+    .split(token)
+    .map((i) => i.split('').reverse().join(''))
+    .join(token)
 }
