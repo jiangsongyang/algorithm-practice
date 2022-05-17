@@ -3,6 +3,6 @@ import { main } from '../src'
 
 describe('happy path', () => {
   it('base test', () => {
-    main()
+    expect(main()).toBe(null)
   })
 })
