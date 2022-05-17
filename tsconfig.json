@@ -11,7 +11,7 @@
     "lib": ["esnext"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node","jest"],
+    "types": ["node", "jest"],
     "paths": {
       "@/*": ["./src/*"]
     }
