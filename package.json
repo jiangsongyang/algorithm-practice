@@ -13,8 +13,8 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "pnpm lint:eslint",
       "pnpm lint:prettier",
+      "pnpm lint:eslint",
       "git add ."
     ]
   },
