@@ -27,7 +27,7 @@ haystack 和 needle 仅由小写英文字符组成
 
 /* _____________ Your Code Here _____________ */
 
-export function strStr (haystack: string, needle: string): number {
+export function strStr(haystack: string, needle: string): number {
   if (needle === '') return 0
   const wLen = needle.split('').length
   const haystackLen = haystack.length
