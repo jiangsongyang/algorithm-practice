@@ -29,7 +29,7 @@ s 中至少存在一个单词
 
 /* _____________ Your Code Here _____________ */
 
-export function lengthOfLastWord (s: string): number {
+export function lengthOfLastWord(s: string): number {
   const end = s.length - 1
   const token = ' '
   let res = 0
