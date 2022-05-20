@@ -22,7 +22,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function addBinary (a: string, b: string): string {
+export function addBinary(a: string, b: string): string {
   let ans = ''
   let ca = 0
   for (let i = a.length - 1, j = b.length - 1; i >= 0 || j >= 0; i--, j--) {
