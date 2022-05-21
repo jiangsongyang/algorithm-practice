@@ -5,8 +5,6 @@ import * as commonInquirer from 'inquirer'
 
 const inquirer = commonInquirer.default
 
-console.log(inquirer, 'inquirer')
-
 const questions = [
   {
     name: 'type',

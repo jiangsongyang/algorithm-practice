@@ -58,7 +58,7 @@ s 和 t 仅包含小写字母
 //   return JSON.stringify(s.split('').sort()) === JSON.stringify(t.split('').sort())
 // }
 // only one hash map
-export function isAnagram (s: string, t: string): boolean {
+export function isAnagram(s: string, t: string): boolean {
   // 0 . create hash map
   const map = Array(26).fill(0)
   // 1 . use s to fill hash map
