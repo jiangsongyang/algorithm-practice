@@ -28,7 +28,7 @@ s 和 t 由任意有效的 ASCII 字符组成
 
 /* _____________ Your Code Here _____________ */
 
-export function isIsomorphic (s: string, t: string): boolean {
+export function isIsomorphic(s: string, t: string): boolean {
   const s2t: any = {}
   const t2s: any = {}
   const len = s.length
