@@ -29,7 +29,7 @@ s[i] 都是 ASCII 码表中的可打印字符
 // }
 
 // double pointer
-export function reverseString (s: string[]): string[] {
+export function reverseString(s: string[]): string[] {
   let _temp = null
 
   for (let left = 0, right = s.length - 1; left < right; left++, right--) {
