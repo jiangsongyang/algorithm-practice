@@ -30,7 +30,7 @@ s 中每个单词都被 单个空格 分隔
 
 /* _____________ Your Code Here _____________ */
 
-export function wordPattern (pattern: string, s: string): boolean {
+export function wordPattern(pattern: string, s: string): boolean {
   const arrPattern = pattern.split('')
   const pMap: any = {}
   const pArr: number[] = []
