@@ -21,7 +21,7 @@ s 由 可打印的 ASCII 字符组成
 
 /* _____________ Your Code Here _____________ */
 
-export function reverseVowels (s: string) {
+export function reverseVowels(s: string) {
   const vowelsArr = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
   let l = 0
