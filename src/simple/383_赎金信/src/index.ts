@@ -27,7 +27,7 @@ ransomNote 和 magazine 由小写英文字母组成
 
 /* _____________ Your Code Here _____________ */
 
-export function canConstruct (ransomNote: string, magazine: string): boolean {
+export function canConstruct(ransomNote: string, magazine: string): boolean {
   const rMap: any = {}
   const mMap: any = {}
   for (let i = 0; i < ransomNote.length; i++) {
