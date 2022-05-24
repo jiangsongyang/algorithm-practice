@@ -23,7 +23,7 @@ s 只包含小写字母
 
 /* _____________ Your Code Here _____________ */
 
-export function firstUniqChar (s: string): number {
+export function firstUniqChar(s: string): number {
   const map: any = {}
   let res = -1
   for (let i = 0; i < s.length; i++) {
