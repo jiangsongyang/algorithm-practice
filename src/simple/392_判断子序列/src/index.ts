@@ -30,7 +30,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function isSubsequence (s: string, t: string): boolean {
+export function isSubsequence(s: string, t: string): boolean {
   let pointer = 0
   for (let i = 0; i < t.length; i++) {
     const token = s[pointer]
