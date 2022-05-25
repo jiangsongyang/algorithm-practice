@@ -25,7 +25,7 @@ s 和 t 只包含小写字母
 
 /* _____________ Your Code Here _____________ */
 
-export function findTheDifference (s: string, t: string): string {
+export function findTheDifference(s: string, t: string): string {
   let as = 0
   let at = 0
   for (let i = 0; i < s.length; i++) {
