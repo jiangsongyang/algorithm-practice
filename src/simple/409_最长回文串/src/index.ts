@@ -74,7 +74,7 @@ s 只能由小写和/或大写英文字母组成
 // }
 
 // 核心就是
-export function longestPalindrome (s: string): number {
+export function longestPalindrome(s: string): number {
   const set = new Set()
   let count = 0
   for (let i = 0; i < s.length; i++) {
