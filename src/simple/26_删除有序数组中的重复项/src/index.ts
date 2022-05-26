@@ -43,7 +43,7 @@ nums 已按 升序 排列
 
 /* _____________ Your Code Here _____________ */
 
-export function removeDuplicates (nums: number[]): number {
+export function removeDuplicates(nums: number[]): number {
   const n = nums.length
   if (n === 0) {
     return 0
