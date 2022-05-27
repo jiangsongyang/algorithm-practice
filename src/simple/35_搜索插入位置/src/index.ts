@@ -42,7 +42,7 @@ nums 为 无重复元素 的 升序 排列数组
 //   return res
 // }
 // 二分查找
-export function searchInsert (nums: number[], target: number): number {
+export function searchInsert(nums: number[], target: number): number {
   const n = nums.length
   let left = 0
   let right = n - 1
