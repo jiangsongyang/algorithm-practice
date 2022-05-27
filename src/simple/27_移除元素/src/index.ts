@@ -43,7 +43,7 @@ for (int i = 0; i < len; i++) {
 
 /* _____________ Your Code Here _____________ */
 
-export function removeElement (nums: number[], val: number): number {
+export function removeElement(nums: number[], val: number): number {
   const n = nums.length
   let left = 0
   for (let right = 0; right < n; right++) {
