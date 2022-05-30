@@ -31,7 +31,7 @@
 
 // 不能转换成数字
 // 有可能溢出
-export function plusOne (digits: number[]): number[] {
+export function plusOne(digits: number[]): number[] {
   /**
    * 思路
    * 三种情况
