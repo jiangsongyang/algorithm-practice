@@ -26,7 +26,7 @@ num1 和num2 都不包含任何前导零
 
 /* _____________ Your Code Here _____________ */
 
-export function addStrings (num1: string, num2: string): string {
+export function addStrings(num1: string, num2: string): string {
   const len1 = num1.length
   const len2 = num2.length
   const len = Math.max(len1, len2)
