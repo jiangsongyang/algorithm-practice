@@ -26,7 +26,7 @@ s 由小写英文字母组成
 
 /* _____________ Your Code Here _____________ */
 
-export function repeatedSubstringPattern (s: string): boolean {
+export function repeatedSubstringPattern(s: string): boolean {
   if (s.length === 0) return false
 
   const getNext = (s: string) => {
@@ -46,6 +46,8 @@ export function repeatedSubstringPattern (s: string): boolean {
 
   const next = getNext(s)
 
-  if (next[next.length - 1] !== -1 && s.length % (s.length - (next[next.length - 1] + 1)) === 0) { return true }
+  if (next[next.length - 1] !== -1 && s.length % (s.length - (next[next.length - 1] + 1)) === 0) {
+    return true
+  }
   return false
 }
