@@ -13,7 +13,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function countSegments (s: string): number {
+export function countSegments(s: string): number {
   let segmentCount = 0
 
   for (let i = 0; i < s.length; i++) {
