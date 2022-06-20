@@ -16,7 +16,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function generate (numRows: number): number[][] {
+export function generate(numRows: number): number[][] {
   const res = []
   /**
    let egg=[
