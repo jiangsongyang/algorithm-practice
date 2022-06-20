@@ -19,13 +19,10 @@
 /* _____________ Your Code Here _____________ */
 
 export function singleNumber (nums: number[]): number {
-  const map: any = {}
-  nums.forEach((i) => {
-    if (map[i]) {
-      delete map[i]
-    } else {
-      map[i] = 1
-    }
-  })
-  return +Object.keys(map)[0]
+  let single = 0
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i]
+    single ^= element
+  }
+  return single
 }
