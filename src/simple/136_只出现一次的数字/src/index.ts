@@ -18,7 +18,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function singleNumber (nums: number[]): number {
+export function singleNumber(nums: number[]): number {
   let single = 0
   for (let i = 0; i < nums.length; i++) {
     const element = nums[i]
