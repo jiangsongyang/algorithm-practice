@@ -25,7 +25,7 @@ s[i] 为 '(' 或 ')'
 
 /* _____________ Your Code Here _____________ */
 
-export function longestValidParentheses (s: string): number {
+export function longestValidParentheses(s: string): number {
   let max = 0
   if (s.length < 1) return max
 
