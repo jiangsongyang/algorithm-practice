@@ -21,7 +21,7 @@ n == nums.length
 
 /* _____________ Your Code Here _____________ */
 
-export function majorityElement (nums: number[]): number {
+export function majorityElement(nums: number[]): number {
   const hashMap = new Map<number, number>()
   for (const num of nums) {
     if (hashMap.has(num)) {
