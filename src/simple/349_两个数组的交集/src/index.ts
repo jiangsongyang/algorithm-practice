@@ -20,7 +20,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function intersection (nums1: number[], nums2: number[]): number[] {
+export function intersection(nums1: number[], nums2: number[]): number[] {
   const map = new Map<number, number>()
   nums1.forEach((num) => {
     !map.has(num) && map.set(num, 1)

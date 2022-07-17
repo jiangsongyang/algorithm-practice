@@ -35,7 +35,7 @@ nums 中的所有数字都 独一无二
 
 /* _____________ Your Code Here _____________ */
 
-export function missingNumber (nums: number[]): number {
+export function missingNumber(nums: number[]): number {
   nums.sort((a, b) => a - b)
   const n: number = nums.length
   for (let i = 0; i < n; i++) {
