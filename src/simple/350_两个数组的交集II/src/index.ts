@@ -14,7 +14,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function intersect (nums1: number[], nums2: number[]): number[] {
+export function intersect(nums1: number[], nums2: number[]): number[] {
   let res = nums1
   res = res.filter((e) => {
     const index = nums2.indexOf(e)
