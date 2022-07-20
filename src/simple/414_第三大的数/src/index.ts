@@ -27,7 +27,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function thirdMax (nums: number[]): number {
+export function thirdMax(nums: number[]): number {
   const sort = nums.sort((a, b) => b - a)
 
   const set = new Set<number>()
