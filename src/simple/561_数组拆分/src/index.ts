@@ -28,7 +28,7 @@ nums.length == 2 * n
 
 /* _____________ Your Code Here _____________ */
 
-export function arrayPairSum (nums: number[]): number {
+export function arrayPairSum(nums: number[]): number {
   nums.sort((a, b) => a - b)
   let res = 0
   for (let i = 0; i < nums.length; i += 2) {
