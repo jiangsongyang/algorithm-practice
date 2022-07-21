@@ -24,7 +24,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function findRelativeRanks (nums: any[]): string[] {
+export function findRelativeRanks(nums: any[]): string[] {
   const sortNums = [...nums].sort((a, b) => b - a)
 
   for (let index = 0; index < nums.length; index++) {
