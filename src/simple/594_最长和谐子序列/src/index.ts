@@ -23,7 +23,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function findLHS (nums: number[]): number {
+export function findLHS(nums: number[]): number {
   const cnt = new Map()
   let res = 0
   for (const num of nums) {
