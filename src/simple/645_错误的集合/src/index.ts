@@ -4,7 +4,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function findErrorNums (nums: number[]): number[] {
+export function findErrorNums(nums: number[]): number[] {
   const errorNums = new Array(2).fill(0)
   const n = nums.length
   nums.sort((a, b) => a - b)
