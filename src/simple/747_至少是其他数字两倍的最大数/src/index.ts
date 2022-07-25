@@ -29,7 +29,7 @@ nums 中的最大元素是唯一的
 
 /* _____________ Your Code Here _____________ */
 
-export function dominantIndex (nums: number[]): number {
+export function dominantIndex(nums: number[]): number {
   if (nums.length === 1) return 0
   const _nums = [...nums]
   _nums.sort((a, b) => b - a)
