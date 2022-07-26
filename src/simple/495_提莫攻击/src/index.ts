@@ -30,7 +30,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function findPoisonedDuration (timeSeries: number[], duration: number): number {
+export function findPoisonedDuration(timeSeries: number[], duration: number): number {
   let res = 0
   for (let i = 0; i < timeSeries.length; i++) {
     const curr = timeSeries[i]
