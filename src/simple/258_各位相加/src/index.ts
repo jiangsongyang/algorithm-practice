@@ -22,7 +22,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function addDigits (num: number): number {
+export function addDigits(num: number): number {
   while (num >= 10) {
     let sum = 0
     while (num > 0) {
