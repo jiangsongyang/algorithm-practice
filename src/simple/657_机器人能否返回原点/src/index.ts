@@ -27,7 +27,7 @@ moves 只包含字符 'U', 'D', 'L' 和 'R'
 
 /* _____________ Your Code Here _____________ */
 
-export function judgeCircle (moves: string): boolean {
+export function judgeCircle(moves: string): boolean {
   let x = 0
   let y = 0
 
