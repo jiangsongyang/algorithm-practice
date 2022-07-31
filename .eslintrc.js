@@ -11,5 +11,5 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint'],
-  rules: { 'no-irregular-whitespace': 'off' }
+  rules: { 'no-irregular-whitespace': 'off', 'no-empty': 'off' }
 }

@@ -27,7 +27,7 @@ n == height.length
 
 /* _____________ Your Code Here _____________ */
 
-export function maxArea (height: number[]): number {
+export function maxArea(height: number[]): number {
   let left = 0
   let right = height.length - 1
   let max = 0
