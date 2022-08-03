@@ -25,7 +25,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function threeSum (nums: number[]): number[][] {
+export function threeSum(nums: number[]): number[][] {
   // 最左侧值为定值，右侧所有值进行两边推进计算
   const res = []
   nums.sort((a, b) => a - b)
