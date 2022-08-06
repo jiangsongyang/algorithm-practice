@@ -31,7 +31,7 @@
 /**
  Do not return anything, modify nums in-place instead.
  */
-export function nextPermutation (nums: number[]): void {
+export function nextPermutation(nums: number[]): void {
   // 增加的幅度尽可能的小
   // 尽可能靠右的低位进行交换，需要从后向前查找
   for (let i = nums.length - 2; i >= 0; i--) {
