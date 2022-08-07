@@ -35,7 +35,7 @@ n == img[i].length
 
 /* _____________ Your Code Here _____________ */
 
-export function imageSmoother (img: number[][]): number[][] {
+export function imageSmoother(img: number[][]): number[][] {
   const m = img.length
   const n = img[0].length
   const ret = new Array(m).fill(0).map(() => new Array(n).fill(0))
