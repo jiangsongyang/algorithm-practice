@@ -19,7 +19,7 @@ nums[a] + nums[b] + nums[c] + nums[d] == target
 
 /* _____________ Your Code Here _____________ */
 
-export function fourSum (nums: number[], target: number): number[][] {
+export function fourSum(nums: number[], target: number): number[][] {
   const quadruplets: number[][] = []
   if (nums.length < 4) {
     return quadruplets
