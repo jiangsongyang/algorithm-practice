@@ -14,7 +14,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function findDisappearedNumbers (nums: number[]): number[] {
+export function findDisappearedNumbers(nums: number[]): number[] {
   const n = nums.length
   for (const num of nums) {
     const x = (num - 1) % n
