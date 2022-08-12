@@ -45,7 +45,7 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 
 /* _____________ Your Code Here _____________ */
 
-export function intToRoman (num: number): string {
+export function intToRoman(num: number): string {
   const valueSymbols = [
     [1000, 'M'],
     [900, 'CM'],
