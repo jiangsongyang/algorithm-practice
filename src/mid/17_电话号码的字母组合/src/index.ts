@@ -21,7 +21,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function letterCombinations (digits: string): string[] {
+export function letterCombinations(digits: string): string[] {
   const map = {
     2: ['a', 'b', 'c'],
     3: ['d', 'e', 'f'],
