@@ -26,7 +26,7 @@ candidates 中的 同一个 数字可以 无限制重复被选取 。如果至�
 
 /* _____________ Your Code Here _____________ */
 
-export function combinationSum (candidates: number[], target: number): number[][] {
+export function combinationSum(candidates: number[], target: number): number[][] {
   const ans = []
   const dfs = (target, combine, idx) => {
     if (idx === candidates.length) {
