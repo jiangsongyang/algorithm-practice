@@ -19,7 +19,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function mySqrt (x: number): number {
+export function mySqrt(x: number): number {
   let num = 1
   let num1
   // 使用牛顿迭代函数
