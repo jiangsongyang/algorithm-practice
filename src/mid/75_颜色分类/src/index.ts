@@ -35,7 +35,7 @@ const swap = function (nums: number[], a: number, b: number) {
   nums[b] = temp
 }
 
-export function sortColors (nums: number[]): void {
+export function sortColors(nums: number[]): void {
   const len = nums.length
   let zero = 0
   let two = len

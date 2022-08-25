@@ -49,7 +49,7 @@ board[i][j] 是一位数字（1-9）或者 '.'
 
 /* _____________ Your Code Here _____________ */
 
-export function isValidSudoku (board: string[][]): boolean {
+export function isValidSudoku(board: string[][]): boolean {
   const rows = new Array(9).fill(0).map(() => new Array(9).fill(0))
   const columns = new Array(9).fill(0).map(() => new Array(9).fill(0))
   const subboxes = new Array(3)
