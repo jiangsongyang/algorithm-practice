@@ -22,7 +22,7 @@ num1 和 num2 都不包含任何前导零，除了数字0本身。
 
 /* _____________ Your Code Here _____________ */
 
-export function multiply (num1: string, num2: string): string {
+export function multiply(num1: string, num2: string): string {
   if (num1 === '0' || num2 === '0') return '0'
   const l1 = num1.length
   const l2 = num2.length
