@@ -24,4 +24,20 @@ nums 中的所有整数 互不相同
 
 /* _____________ Your Code Here _____________ */
 
-export function permute (nums: number[]): number[][] {}
+export function permute (nums: number[]): number[][] {
+  const res = []
+  const n = nums.length
+  const backTrack = (fir) => {
+    if (fir === n) {
+      // 长度等于nums长度，即构成了一种排列，复制进res中
+      res.push([...nums])
+    }
+    for (let i = fir; i < n; i++) {
+      ;[nums[fir], nums[i]] = [nums[i], nums[fir]] // 交换nums[fir]和nums[i],保证下标[0, fir]都是使用过的数字，下标[fir + 1, n - 1]都是未使用过的数字
+      backTrack(fir + 1) // 继续确定下一位的数字
+      ;[nums[fir], nums[i]] = [nums[i], nums[fir]] // 撤销标记
+    }
+  }
+  backTrack(0)
+  return res
+}
