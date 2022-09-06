@@ -24,7 +24,7 @@ nums 中的所有整数 互不相同
 
 /* _____________ Your Code Here _____________ */
 
-export function permute (nums: number[]): number[][] {
+export function permute(nums: number[]): number[][] {
   const res = []
   const n = nums.length
   const backTrack = (fir) => {
