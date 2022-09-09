@@ -25,7 +25,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-export function threeSumClosest (nums: number[], target: number): number {
+export function threeSumClosest(nums: number[], target: number): number {
   nums.sort((a, b) => a - b)
   // 初始化一个最小值
   let min = Infinity
